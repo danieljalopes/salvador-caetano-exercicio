@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org" >
+<head>
+  <title>Calcular Prestacao Mensal</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Calcular Prestacao Mensal</h1>
+
+<form action="#" id="CalcularPrestacaoForm" th:action="@{/prestacao-mensal/calcular}" th:object="${prestacaoMensal}" method="post">
+<!--
+  <div>
+  <p>Tipo Financiamento: <input type="text" th:field="*{tipoFinanciamento}" /></p>
+  <p th:if="${#fields.hasErrors('tipoFinanciamento')}" th:errors="*{tipoFinanciamento}">tipoFinanciamento Error</p>
+  </div>
+-->
+  <div>
+    <p>Tipo Financiamento
+    <select th:field="*{tiposFinanciamento}" th:name="tipoFinanciamento" th:id="tipoFinanciamento">
+
+      <option th:each="tipo : *{tiposFinanciamento}"
+              th:value="${tipo}" th:text="${tipo}">tipoFinanciamento
+        </option>
+    </select>
+    </p>
+  </div>
+  <div>
+    <p>Num Prestacaoes: <input type="text" th:field="*{numPrestacoes}" /></p>
+    <p th:if="${#fields.hasErrors('numPrestacoes')}" th:errors="*{numPrestacoes}">numPrestacoes Error</p>
+  </div>
+
+  <div>
+    <p>Valor Viatura: <input type="text" th:field="*{valorViatura}" /></p>
+    <p th:if="${#fields.hasErrors('valorViatura')}" th:errors="*{valorViatura}">valorViatura Error</p>
+  </div>
+
+  <div>
+    <p><input type="submit" id="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+  </div>
+
+</form>
+
+<p id="success"></p>
+
+
+<script type="text/javascript"
+        src="../../static/js/jquery.3.6.0.min.js"
+        th:src="@{/js/jquery.3.6.0.min.js}"></script>
+<script type="text/javascript"
+        src="../../static/js/jquery.validator.1.19.3.min.js"
+        th:src="@{/js/jquery.validator.1.19.3.min.js}"></script>
+
+<script type="text/javascript"
+        src="../../static/js/prestacao.mensal.js"
+        th:src="@{/js/prestacao.mensal.min.js}"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function () {
+    PrestacaoMensal.init();
+  });
+</script>
+</body>
+</html>
