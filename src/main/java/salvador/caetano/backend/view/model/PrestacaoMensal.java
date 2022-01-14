@@ -1,4 +1,4 @@
-package salvador.caetano.backend.viewModel;
+package salvador.caetano.backend.view.model;
 
 import lombok.Builder;
 import lombok.Data;
