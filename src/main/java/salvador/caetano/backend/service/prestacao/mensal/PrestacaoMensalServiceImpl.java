@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import salvador.caetano.backend.dto.PrestacaoMensalRequestDto;
 import salvador.caetano.backend.exception.PrestacaoMensalException;
 import salvador.caetano.backend.exception.TipoFinanciamentoException;
-import salvador.caetano.backend.service.prestacao.mensal.factory.PrestacaoMensalCalculador;
+import salvador.caetano.backend.service.prestacao.mensal.calculador.PrestacaoMensalCalculador;
 import salvador.caetano.backend.service.prestacao.mensal.factory.PrestacaoMensalCalculadorFactory;
 
 @Service

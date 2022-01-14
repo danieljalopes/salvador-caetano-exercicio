@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import salvador.caetano.backend.exception.TipoFinanciamentoException;
+import salvador.caetano.backend.service.prestacao.mensal.calculador.PrestacaoMensalCalculador;
 
 import javax.validation.constraints.NotNull;
 

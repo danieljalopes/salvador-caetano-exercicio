@@ -1,6 +1,5 @@
-package salvador.caetano.backend.service.prestacao.mensal.factory;
+package salvador.caetano.backend.service.prestacao.mensal.calculador;
 
-import lombok.Builder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;

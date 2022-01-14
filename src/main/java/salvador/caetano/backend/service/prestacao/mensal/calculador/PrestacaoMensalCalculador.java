@@ -1,4 +1,4 @@
-package salvador.caetano.backend.service.prestacao.mensal.factory;
+package salvador.caetano.backend.service.prestacao.mensal.calculador;
 
 import salvador.caetano.backend.exception.PrestacaoMensalException;
 

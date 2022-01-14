@@ -20,7 +20,7 @@ Pode ser acedido em http://localhost:8080/swagger-ui.html
 .\gradlew cucumberCli
 ```
 ### Testes unitários
-Testes unitários em Junit e Mockito
+Testes unitários em Junit
 ````
 .\gradlew test
 ````

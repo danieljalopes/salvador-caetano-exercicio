@@ -3,7 +3,6 @@ package salvador.caetano.backend.unit_test;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import org.mockito.stubbing.Answer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -12,10 +11,7 @@ import salvador.caetano.backend.dto.PrestacaoMensalRequestDto;
 import salvador.caetano.backend.exception.PrestacaoMensalException;
 import salvador.caetano.backend.exception.TipoFinanciamentoException;
 import salvador.caetano.backend.service.prestacao.mensal.PrestacaoMensalService;
-import salvador.caetano.backend.service.prestacao.mensal.factory.PrestacaoMensalCalculador;
 import salvador.caetano.backend.service.prestacao.mensal.factory.PrestacaoMensalCalculadorFactory;
-import salvador.caetano.backend.service.prestacao.mensal.factory.PrestacaoMensalCalculadorFinanciamentoExterno;
-import salvador.caetano.backend.service.prestacao.mensal.factory.PrestacaoMensalCalculadorFinanciamentoInterno;
 
 @SpringBootTest
 @ActiveProfiles(profiles = "test")

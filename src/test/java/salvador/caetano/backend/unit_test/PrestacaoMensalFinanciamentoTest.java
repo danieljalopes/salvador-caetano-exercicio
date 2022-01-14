@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import salvador.caetano.backend.exception.PrestacaoMensalException;
-import salvador.caetano.backend.service.prestacao.mensal.factory.PrestacaoMensalCalculador;
+import salvador.caetano.backend.service.prestacao.mensal.calculador.PrestacaoMensalCalculador;
 
 @SpringBootTest
 @ActiveProfiles(profiles = "test")
